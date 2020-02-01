@@ -111,6 +111,15 @@ class AwemeSDK:
             'cursor': cursor,
         }
 
+    @register(API.UserPromotionsSearch)
+    def SearchUserPromotions(self, uid, keyword,cursor=0):
+        return {
+            'token': self.token,
+            'uid': uid,
+            'keyword':keyword,
+            'cursor': cursor,
+        }
+
     @register(API.VideoComments)
     def GetVideoComments(self, aweme_id, cursor=0):
         return {
@@ -178,4 +187,49 @@ class AwemeSDK:
             'token': self.token,
             'pid': poi_id,
             'cursor':cursor
+        }
+
+    @register(API.PromotionsVideosFeed)
+    def GetPromotionVideosFeed(self, page=1):
+        return {
+            'token': self.token,
+            'page': page,
+        }
+
+    @register(API.PromotionInfo)
+    def GetPromotionInfo(self,promotion_id):
+        return {
+            'token': self.token,
+            'promotion_id': promotion_id,
+        }
+
+    @register(API.PromotionSameVideos)
+    def GetPromotionSameVideos(self, promotion_id):
+        return {
+            'token': self.token,
+            'promotion_id': promotion_id,
+        }
+
+    @register(API.RealStarBoard)
+    def RealStarBoard(self):
+        return {
+            'token': self.token,
+        }
+
+    @register(API.RealHotBoard)
+    def RealHotBoard(self):
+        return {
+            'token': self.token,
+        }
+
+    @register(API.RealGoodsBoard)
+    def RealGoodsBoard(self):
+        return {
+            'token': self.token,
+        }
+
+    @register(API.RealHotVideos)
+    def RealHotVideos(self):
+        return {
+            'token': self.token,
         }

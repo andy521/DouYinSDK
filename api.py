@@ -16,6 +16,7 @@ class API:
     UserDongtai         = '/douyin/user/dongtai'
     UserFavourites      = '/douyin/user/favourite'
     UserPromotions      = '/douyin/user/promotions'
+    UserPromotionsSearch= '/douyin/user/promotions/search'
 
     VideoComments       = '/douyin/video/comments'
     VideoPromotions     = '/douyin/video/promotions'
@@ -29,5 +30,14 @@ class API:
 
     PoiDetail           = '/douyin/poi/detail'
     PoiVideos           = '/douyin/poi/videos'
+
+    PromotionsVideosFeed= '/douyin/promotion/videos/feed'
+    PromotionInfo       = '/douyin/promotion/info'
+    PromotionSameVideos = '/douyin/promotion/samevideos'
+
+    RealStarBoard       = '/douyin/starboard'
+    RealHotBoard        = '/douyin/hotboard'
+    RealGoodsBoard      = '/douyin/goodsboard'
+    RealHotVideos       = '/douyin/hotvideo'
 
 
